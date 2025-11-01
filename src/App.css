@@ -1,0 +1,170 @@
+/* === STYLE GLOBAL  === */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #e9eff6;
+  margin: 0;
+  padding: 20px;
+  color: #1c1c1c;
+}
+
+/* Conteneur principal centré */
+.dashboard {
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+}
+
+/* EN-TÊTE STYLE  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e3765; /* bleu foncé */
+  color: white;
+  padding: 15px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+}
+
+/* Alignements dans le header */
+.header .left,
+.header .center,
+.header .right {
+  flex: 1;
+  text-align: center;
+}
+
+.header .left {
+  text-align: left;
+}
+
+.header .right {
+  text-align: right;
+}
+
+/* Logo */
+.logo {
+  width: 70px;
+  height: auto;
+  border-radius: 8px;
+  background-color: white;
+  padding: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+
+/* Titre principal */
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Horloge numérique */
+.clock {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+/*  SECTIONS PRINCIPALES  */
+h2, h3 {
+  margin: 20px 0 10px;
+  color: #1e3765;
+}
+
+/* Dernière mise à jour */
+.last-update {
+  font-size: 1rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/*  LISTE DES TRAINS */
+.train-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+/* Carte d’un train */
+.train-item {
+  background-color: white;
+  border: 2px solid #dbe2ef;
+  border-radius: 14px;
+  padding: 16px;
+  width: 260px;
+  min-height: 160px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.train-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.train-item.cancelled {
+  background-color: #ffe6e6;
+  border: 2px solid #f44336;
+  color: #a10000;
+  font-weight: bold;
+}
+
+.train-item.late {
+  background-color: #fff4e6;
+  border: 2px solid #ff9800;
+  color: #b35b00;
+  font-weight: bold;
+}
+
+/* STATISTIQUES */
+.stats {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e3ecfc;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats h3 {
+  color: #1e3765;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+@media (min-width: 1600px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .clock {
+    font-size: 1.8rem;
+  }
+
+  .train-item {
+    width: 300px;
+    font-size: 1.3rem;
+  }
+}
