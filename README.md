@@ -29,7 +29,7 @@ Les données proviennent de l’API publique iRail ([documentation officielle](h
 ## 💻 Installation et exécution
 1. Cloner le dépôt  
 
-    git clone https://github.com/ton-utilisateur/dashboard-trains-nivelles.git
+    git clone https://github.com/meryemghorafi/dashboard-trains-nivelles
     
     cd dashboard-trains-nivelles
 
